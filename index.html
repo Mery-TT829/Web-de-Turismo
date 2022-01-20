@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Carousel Template · Bootstrap</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico/genial.jpg">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Carousel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#myCarousel">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#iconos">Packs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#toursbosque">Tours Bosque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#toursvolcan">Tours Volcán</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tourspiramides">Tours Pirámides</a>
+                        </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+                        <!-- MY CAROUSEL-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/montañas.webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Cada día es una gran oportunidad</h1>
+                            <p> Los que aseguran que es imposible, no deberían interrumpir a los que estamos intentándolo (Thomas Edison)</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Registrate ahora</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/lago espejo.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+                    <svg class="bd-placeholder-img"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Nunca dejes de soñar.</h1>
+                            <p>Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: La voluntad (Albert Einstein)</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer más</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/cascada.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Tus Logros dependen de ti.</h1>
+                            <p>La buena vida es un proceso, no un estado del ser, se trata de una dirección, no de un destino. (Carl Rogers)</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Navegar por la galería</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+            <!--FIN MY CAROUSEL-->
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing"> <!--ICONOS DE TIPOS DE SERVICIOS-->
+
+            <!-- Three columns of text below the carousel -->
+            <div id="iconos" class="row">
+                <div class="col-lg-4">
+                    <img class="icon" src="./img/domir.jpg" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140" />
+
+                    <h2>¿Estás cansad@?</h2>
+                    <p class="parrafo-icono">Descubre junto a nosotros la pasión de un amanecer diferente. Somos una colección de momentos mágicos, paisajes sorprendentes y servicios únicos. Somos un lugar turístico soñado para que lo vivas y recuerdes. Ven no te arrepentirías.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="icon" src="./img/éxito.jpg" width="140" height="140">
+
+                    <h2>!Estás motivad@¡</h2>
+                    <p class="parrafo-icono">¿En busca de aventuras? Búscala con nosotros. Somos parte de conducir tu destino a un lugar turístico de ensueño. Te llevamos a un mundo de turismo donde te sientas libre,Tu defines el rumbo, nosotros somos tu destino. para este viaje
+                        solo faltas tu.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="icon" src="./img/la retaron.jpg" width="140" height="140">
+
+                    <h2>¿Te sientes mal?</h2>
+                    <p class="parrafo-icono">Ayuda a desestrezarte con una visita a nuestro lugar de turismo, momentos divertidos, alegres, de aventura, de emociones, lo vives aquí. Disfruta, vive, emociónate, tenemos para cada día un momento por el cuál ser feliz. Te esperamos.
+                    </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+                      <!-- /FIN ICONOS DE TIPOS DE SERVICIOS -->
+
+
+            <!-- START THE FEATURETTES -->   
+
+            <hr class="featurette-divider">
+                <!--TOURS BOSQUE-->
+            <div id="toursbosque" class="row featurette 1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Comienza tu aventura. <span class="text-muted">Con la caminata más placentera en el Bosque Encantado.</span></h2>
+                    <p class="lead">El Bosque Encantado cuenta con un sendero de montaña de mediana dificultad, el cual dura dos horas aproximadamente. La entrada se encuentra a unos 180 Km al norte de Coyhaique y a 45 Km de Puerto Cisnes.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img" src="./img/bosque-otono.jpg" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" />
+
+                </div>
+            </div>
+                <!--FIN TOURS BOSQUE-->
+            <hr class="featurette-divider">
+                <!--TOURS VOLCÁN-->
+            <div id="toursvolcan" class="row featurette 2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading volcan">Oh si, esto es genial!. <span class="text-muted">Emocionate descubriendo más allá.</span></h2>
+                    <p class="lead volcan">El Volcán Osorno es uno de los volcanes más bonitos del sur de Chile, tiene un cono casi perfecto y es visible desde varios puntos de la zona como los Saltos de Petrohué, Puerto Montt, Osorno e incluso en el cruce del Canal de Chacao
+                        para ir a Chiloé.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="img" src="./img/volcan en el mar.jpg" alt="volcán en el mar" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" />
+
+                </div>
+            </div>
+                    <!--FIN TOURS VOLCÁN-->
+            <hr class="featurette-divider">
+                    <!--TOURS PIRÁMIDES-->
+            <div id="tourspiramides" class="row featurette 3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Para finalizar, Las Pirámides de Giza. <span class="text-muted">Let's go!.</span></h2>
+                    <p class="lead">Localizadas en la meseta de Giza, a 18 kilómetros de El Cairo, las Pirámides no solo son los monumentos más importantes de Egipto, sino también los más antiguos del mundo. Se trata de construcciones funerarias que se edificaron bajo
+                        las órdenes de faraones de diferentes dinastías. Descubra algunas de las magníficas antigüedades de Egipto en una escapada privada de un día a las pirámides de Guiza, Saqqara y Menfis desde El Cairo, ádemas podrá admirar las maravillosas
+                        Pirámides y la Esfinge, y hacer un recorrido por el famoso Museo Egipcio.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img" src="./img/5 piramides.webp" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" />
+
+                </div>
+            </div>
+                <!--FIN TOURS PIRÁMIDES-->
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->    <!--FIN TOURS-->
+
+        </div>
+        <!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Volver al inicio</a></p>
+            <p>&copy; 2022-2025 María Cristina | Company, Inc. &middot; <a href="#">Privado</a> &middot; <a href="#">Términos y Condiciones</a></p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
+
+
+
+
